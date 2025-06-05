@@ -562,7 +562,7 @@ func TestResolveLocalAnd1PasswordConfigurations(t *testing.T) {
 				MfaToken:   "019879",
 				MfaProcess: "mfa login",
 			},
-			err: fmt.Errorf("only 1Password-backed OTP authentication is supported by the MFA worklfow of the AWS shell plugin"),
+			err: fmt.Errorf("only 1Password-backed OTP authentication is supported by the MFA workflow of the AWS shell plugin"),
 		},
 		{
 			description: "mfa data is present only in 1Password",

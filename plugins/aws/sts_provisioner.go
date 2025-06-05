@@ -231,7 +231,7 @@ func resolveLocalAnd1PasswordConfigurations(itemFields map[sdk.FieldName]string,
 
 	// only 1Password OTPs are supported
 	if awsConfig.MfaToken != "" || awsConfig.MfaProcess != "" || awsConfig.MfaPromptMethod != "" {
-		return fmt.Errorf("only 1Password-backed OTP authentication is supported by the MFA worklfow of the AWS shell plugin")
+		return fmt.Errorf("only 1Password-backed OTP authentication is supported by the MFA workflow of the AWS shell plugin")
 	}
 	// make sure 1Password OTP is used
 	if hasOTP {
